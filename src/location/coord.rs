@@ -1,7 +1,7 @@
 use serde_derive::{Deserialize, Serialize};
 use crate::location::location::Location;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct Coord {
     lat: f32,
     lng: f32
