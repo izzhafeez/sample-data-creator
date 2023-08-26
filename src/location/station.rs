@@ -4,7 +4,7 @@ use serde_derive::{Deserialize, Serialize};
 use crate::location::coord::Coord;
 use crate::location::location::Location;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct Station {
     name: String,
     #[serde(flatten)]
