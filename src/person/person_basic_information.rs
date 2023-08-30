@@ -3,8 +3,8 @@ use serde_derive::Deserialize;
 
 #[derive(Debug, Deserialize)]
 pub struct PersonBasicInformation {
-    name: String,
-    station_name: String
+    pub name: String,
+    pub station_name: String
 }
 
 impl PersonBasicInformation {
